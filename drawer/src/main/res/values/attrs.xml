@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawerView">
+        <!--        Effect of drawer. Default: slide -->
+        <attr name="drawerEffect" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="slide" value="1"/>
+            <enum name="traditional" value="2"/>
+            <enum name="zoom" value="3"/>
+            <enum name="zoom3d" value="4"/>
+        </attr>
+        <!--        The page index which is initially selected. By default, it's same as contentPage-->
+        <attr name="selectedPage" format="integer"/>
+        <!--        The page index that is used as content page. Default: 1-->
+        <attr name="contentPage" format="integer"/>
+        <!--        default: center, no of visible pages on screen-->
+        <attr name="drawerMode" format="enum|integer">
+            <enum name="center" value="1"/>
+            <enum name="two" value="2"/>
+            <enum name="three" value="3"/>
+            <enum name="custom" value="4"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="DrawerView_Layout">
+        <attr name="widthPercent" format="float|dimension"/>
+    </declare-styleable>
+</resources>
